@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biografia - Kaleb</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #09090b;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .logo {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background: #18181b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 50px;
+      font-weight: bold;
+      border: 1px solid #27272a;
+      box-shadow: 0 0 30px rgba(255,255,255,0.1);
+    }
+
+    h1 {
+      font-size: 70px;
+      margin-top: 30px;
+    }
+
+    .descricao {
+      color: #a1a1aa;
+      max-width: 700px;
+      margin-top: 20px;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    .tags {
+      display: flex;
+      gap: 15px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .tag {
+      background: #18181b;
+      border: 1px solid #27272a;
+      padding: 10px 20px;
+      border-radius: 30px;
+      color: #d4d4d8;
+    }
+
+    .sobre {
+      padding: 80px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: #18181b;
+      border: 1px solid #27272a;
+      border-radius: 25px;
+      padding: 35px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      margin-bottom: 20px;
+      font-size: 35px;
+    }
+
+    .card p {
+      color: #a1a1aa;
+      line-height: 1.8;
+      font-size: 18px;
+    }
+
+    .github-area {
+      padding: 80px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .github-box {
+      background: #18181b;
+      border: 1px solid #27272a;
+      border-radius: 25px;
+      padding: 50px;
+      text-align: center;
+      max-width: 700px;
+      width: 100%;
+    }
+
+    .github-box h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .github-box p {
+      color: #a1a1aa;
+      margin-bottom: 35px;
+      font-size: 18px;
+    }
+
+    .github-btn {
+      display: inline-block;
+      padding: 16px 40px;
+      background: white;
+      color: black;
+      text-decoration: none;
+      border-radius: 18px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .github-btn:hover {
+      transform: scale(1.05);
+    }
+
+    .carrossel-section {
+      padding: 80px 20px;
+    }
+
+    .carrossel-section h2 {
+      text-align: center;
+      font-size: 45px;
+      margin-bottom: 40px;
+    }
+
+    .carrossel {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 20px;
+    }
+
+    .carrossel img {
+      width: 500px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 25px;
+      border: 1px solid #27272a;
+      scroll-snap-align: center;
+      flex-shrink: 0;
+    }
+
+    footer {
+      border-top: 1px solid #27272a;
+      padding: 30px;
+      text-align: center;
+      color: #71717a;
+    }
+
+    ::-webkit-scrollbar {
+      height: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #27272a;
+      border-radius: 20px;
+    }
+
+    @media(max-width: 768px) {
+      h1 {
+        font-size: 50px;
+      }
+
+      .carrossel img {
+        width: 320px;
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <img class="logo                                                            " src="kaleb sense Life.jfif" alt="">
+
+    <h1>Kaleb</h1>
+
+    <p class="descricao">
+      Estudante do Ensino Médio na Escola Saturnino de Brito e apaixonado
+      por tecnologia, programação e desenvolvimento de sistemas.
+    </p>
+
+    <div class="tags">
+      <div class="tag">Ensino Médio</div>
+      <div class="tag">ADS</div>
+      <div class="tag">Tecnologia</div>
+    </div>
+  </section>
+
+  <section class="sobre">
+    <div class="card">
+      <h2>Sobre Mim</h2>
+
+      <p>
+        Meu nome é rhian  e atualmente estudo no Ensino Médio na Escola
+        Saturnino de Brito. Tenho interesse na área de tecnologia e estou
+        aprendendo ADS (Análise e Desenvolvimento de Sistemas), explorando
+        programação, criação de projetos e desenvolvimento web.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>projetos</h2>
+
+      <p>
+        Busco evoluir cada vez mais na programação, criar sites, jogos e
+        aplicações modernas, além de transformar ideias em projetos
+        criativos e funcionais.
+      </p>
+    </div>
+  </section>
+
+  <section class="github-area">
+    <div class="github-box">
+      <h2>Meu GitHub</h2>
+
+      <p>
+        Veja meus projetos, códigos e evolução na programação.
+      </p>
+
+      <a href="https://github.com/" target="_blank" class="github-btn">
+        Acessar GitHub
+      </a>
+    </div>
+  </section>
+
+  <section class="carrossel-section">
+    <h2>Galeria</h2>
+
+    <div class="carrossel">
+      <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" alt="Imagem 1">
+
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Imagem 2">
+
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" alt="Imagem 3">
+    </div>
+  </section>
+
+  <footer>
+    © 2026 • Site Biografia de Kaleb
+  </footer>
+
+</body>
+</html>
